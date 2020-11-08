@@ -5,6 +5,16 @@ import Lottie from 'lottie-web';
 const Container = styled.div`
   width: 150px;
   height: 150px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background: #fefefe;
+  box-shadow: 0 5px 10px black;
+  transition: all 300ms;
+  :active {
+    background: #eeeeee;
+    box-shadow: 0 2px 5px black;
+    margin-top: 5px;
+  }
 `;
 
 export const IconHolder = ({ animationData }) => {

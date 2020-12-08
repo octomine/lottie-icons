@@ -3,26 +3,24 @@ import styled from 'styled-components';
 import Lottie from 'lottie-web';
 
 const Container = styled.div`
+  margin: 5px;
   width: 150px;
   height: 150px;
-  border: 2px solid black;
-  border-radius: 8px;
+  border-radius: 12px;
   background: #fefefe;
-  box-shadow: 0 5px 10px black;
+  box-shadow: inset 0 -1px 2px grey;
   transition: all 300ms;
   :active {
     background: #eeeeee;
-    box-shadow: 0 2px 5px black;
-    margin-top: 5px;
+    box-shadow: inset 0 1px 2px black;
   }
 `;
 
-export const IconHolder = ({ animationData }) => {
+export const Icon = ({ animationData }) => {
   const ref = useRef(null);
   const [anim, setAnim] = useState(null);
 
   useEffect(() => {
-    console.warn(animationData);
     setAnim(
       Lottie.loadAnimation({
         container: ref.current,

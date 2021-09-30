@@ -5,6 +5,7 @@ import dataBattery from './assets/battery.json';
 import dataMountains from './assets/mountains.json';
 import dataIsland from './assets/island.json';
 import dataFurTree from './assets/fur-tree.json';
+import dataFlower from './assets/flower.json';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Icon animationData={dataMountains}></Icon>
       <Icon animationData={dataIsland}></Icon>
       <Icon animationData={dataFurTree}></Icon>
+      <Icon animationData={dataFlower}></Icon>
     </div>
   );
 }

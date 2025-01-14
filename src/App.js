@@ -14,7 +14,6 @@ function App() {
       <Icon animationData={dataMountains}></Icon>
       <Icon animationData={dataIsland}></Icon>
       <Icon animationData={dataFurTree}></Icon>
-      <Icon animationData={dataFlower}></Icon>
     </div>
   );
 }
